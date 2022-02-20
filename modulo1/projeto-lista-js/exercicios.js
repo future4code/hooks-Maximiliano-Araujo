@@ -41,22 +41,20 @@ function calculaIMC(peso, altura) {
 calculaIMC(85,1.8)
 
 // EXERCÍCIO 04
-function imprimeInformacoesUsuario() {
-  const nome = prompt("Qual o seu nome?")
-  const idade = prompt("Qual a sua idade")
-  const email = prompt("Qual o seu email")
-  const informacoes = (nome, idade, email)
-  return informacoes
+function imprimeInformacoesUsuario(nome, idade, email) {
+  nome = prompt("Qual o seu nome?")
+  idade = prompt("Qual a sua idade?")
+  email = prompt("Qual o seu email?")
+  console.log(`Meu nome é ${nome}, tenho ${idade} e meu email é${email}`)
 }
 
 
 // EXERCÍCIO 05
-function imprimeTresCoresFavoritas() {
-  let cor1 = prompt("Qual a sua primeira cor favorita?")
-  let cor2 = prompt("Qual a sua segunda cor favorita?")
-  let cor3 = prompt("Qual a sua terceira cor favorita?")
-  let cores = cores.push(cor1, cor2, cor3) 
-  return cores 
+function imprimeTresCoresFavoritas(cor1, cor2, cor3) {
+  cor1 = prompt("digite uma cor:")
+  cor2 = prompt("Digite uma segunda cor:")
+  cor3 = prompt("Digite uma terceira cor:")
+  console.log([cor1, cor2, cor3])
 
 }
 
@@ -98,7 +96,7 @@ function retornaUltimoElemento(array) {
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-   const primeiro = array [0]
+   const primeiro = array[0]
    const ultimo = array[ array.length -1]
    array[0] = ultimo
    array[ array.length -1] = primeiro
