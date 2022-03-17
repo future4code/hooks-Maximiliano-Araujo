@@ -55,10 +55,21 @@ function retornaNumerosParesElevadosADois(array) {
 
 }
 
+
+
 retornaNumerosParesElevadosADois
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
+
+    let maiorNumero = array[0]
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > maiorNumero) {
+            maiorNumero = array[i]
+        }
+    }
+    return maiorNumero
 
 }
 
