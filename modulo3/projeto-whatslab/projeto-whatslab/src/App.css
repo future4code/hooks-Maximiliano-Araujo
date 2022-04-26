@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: greenyellow;
+}
+
+
+.container {
+  margin: 2px auto;
+  background-image: url(./whatsapp.jpg);
+  height: 98vh;
+  width: 50vw; 
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.buttons { 
+  box-sizing: border-box; 
+  background-color: white;
+  display: flex;
+  height: 5vh;
+  max-width: 100vw;
+}
+ .buttonUser {  
+  width: 10vw;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonMessage {
+  border-radius: 5%;
+  width: 35vw;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.buttonSend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13%;
+  background-color: aqua;
+  width: 5vw;
+}
+
+.buttonSend > img {
+  width: 20px;
+  height: 20px;
+}
+
