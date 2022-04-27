@@ -1,4 +1,7 @@
+import React from 'react';
 import './App.css';
+import { Container ,Buttons ,ButtonUser ,ButtonMessage,ButtonSend } from './styled';
+
 
 
 
@@ -8,16 +11,26 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <body className="caixadeDeMensagem">
+      <Container>
+        <Buttons>
+          <ButtonUser>User</ButtonUser>
+          <ButtonMessage>Message</ButtonMessage>
+          <ButtonSend>Send</ButtonSend>
+        </Buttons>
+      </Container>
+
+
+
+      /* <body classname="mainContainer">
         <div className="container">
           <div className="buttons">
-            <imput className="buttonUser">User</imput>
-            <imput className="buttonMessage">Message</imput>
-            <button className="buttonSend"></button>
+            <input className="buttonUser">User</input>
+            <input className="buttonMessage">Message</input>
+            <button className="buttonSend">Send</button>
           </div>
         </div>
-      </body>
-    </div>
+      </body> */
+    // </div>
 
   );
 }

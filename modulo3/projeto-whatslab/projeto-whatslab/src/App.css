@@ -8,10 +8,10 @@ body {
   background-color: greenyellow;
 }
 
-
+/* 
 .container {
   margin: 2px auto;
-  background-image: url(./whatsapp.jpg);
+  background-image: url(./whatsapp.jpg);  
   height: 98vh;
   width: 50vw; 
   border: 1px solid black;
@@ -55,7 +55,7 @@ body {
   border-radius: 13%;
   background-color: aqua;
   width: 5vw;
-}
+} */
 
 .buttonSend > img {
   width: 20px;
