@@ -13,8 +13,13 @@ export const Container = styled.div`
   align-items: flex-end;
 `;
 
+
 export const Buttons =styled.div`
   box-sizing: border-box; 
+
+export const Buttons =styled.button`
+box-sizing: border-box; 
+
   background-color: white;
   display: flex;
   height: 5vh;
@@ -32,7 +37,11 @@ export const ButtonUser =styled.input`
 `;
 export const ButtonMessage = styled.input`
  border-radius: 5%;
+
   width: 34vw;
+
+  width: 35vw;
+
   background-color: white;
   border: 1px solid black;
   display: flex;

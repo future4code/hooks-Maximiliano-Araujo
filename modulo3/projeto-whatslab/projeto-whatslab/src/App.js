@@ -1,11 +1,11 @@
 import React from "react";
+
 import { Container, Buttons, ButtonUser, ButtonMessage, ButtonSend } from "./styled";
 
 
 function App() {
   return (
     <Container>
-
       <Buttons>
         <ButtonUser></ButtonUser>
         <ButtonMessage></ButtonMessage>
@@ -14,8 +14,17 @@ function App() {
 
 
 
-    </Container>
+import {Container, Buttons, ButtonUser, ButtonMessage, ButtonSend} from "./styled"
 
+
+function App(){
+  return(
+    <Container>  
+      <Buttons></Buttons>
+      <ButtonUser>User</ButtonUser>      
+      <ButtonMessage>Enviar</ButtonMessage>
+      <ButtonSend>Send</ButtonSend>
+    </Container>
   )
 }
 
