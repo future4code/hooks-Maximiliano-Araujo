@@ -1,19 +1,12 @@
-import HomePage from "./pages/HomePage"
-import {createGlobalStyle} from "styled-components"
+import { RoutesMain } from "./routes/routes";
+import {GlobalStyle} from "./styled-components/General-styled"
 
-const GlobalStyle = createGlobalStyle`
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-`
 
 const App = () => {
   return (
     <div>
       <GlobalStyle />
-      <HomePage />
+      <RoutesMain />
     </div>
   )
 }
