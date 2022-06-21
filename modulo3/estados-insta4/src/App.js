@@ -16,6 +16,9 @@ const MainContainer = styled.div`
 class App extends React.Component {
 
 
+
+=======
+
 =======
 
   state = {
@@ -51,6 +54,7 @@ class App extends React.Component {
         </MainContainer>
       )
     })
+
     // return (
     //   <MainContainer>
     //     <Post
@@ -69,6 +73,9 @@ class App extends React.Component {
     //       fotoPost={'https://picsum.photos/200/160'} />
     //   </MainContainer>
     // );
+
+
+  
 
         nomeUsuario: "Mariana",
         fotoUsuario: "https://picsum.photos/60/60",
@@ -91,8 +98,9 @@ class App extends React.Component {
     )
 
   }
-
-  
-
 }
+
+
+
+
 export default App;

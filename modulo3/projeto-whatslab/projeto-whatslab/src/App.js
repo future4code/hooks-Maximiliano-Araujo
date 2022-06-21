@@ -20,16 +20,13 @@ import {Container, Buttons, ButtonUser, ButtonMessage, ButtonSend} from "./style
 
 function App(){
   return(
-    <Container>
-      
+    <Container>  
       <Buttons></Buttons>
       <ButtonUser>User</ButtonUser>      
       <ButtonMessage>Enviar</ButtonMessage>
       <ButtonSend>Send</ButtonSend>
 
-
     </Container>
-
   )
 }
 

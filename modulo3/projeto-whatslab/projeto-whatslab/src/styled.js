@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 export const Buttons =styled.div`
   box-sizing: border-box; 
-=======
+
 export const Buttons =styled.button`
 box-sizing: border-box; 
 
@@ -39,7 +39,7 @@ export const ButtonMessage = styled.input`
  border-radius: 5%;
 
   width: 34vw;
-=======
+
   width: 35vw;
 
   background-color: white;
