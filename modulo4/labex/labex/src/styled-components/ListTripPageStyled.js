@@ -7,6 +7,7 @@ box-sizing: border-box;
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: antiquewhite;
 `
 export const BackgroundImage = styled.img`
 background-image: url(${props => props});
@@ -39,10 +40,22 @@ margin-left: 70px;
 export const ContainerBox = styled.div`
 height: 75vh;
 width: 78vw;
-border: 1px black solid;
+border: 1px #faebd6 double;
 border-radius: 5px;
+box-sizing: border-box;
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+padding: 16px;
+/* overflow-y: scroll; */
 `
 export const Button = styled.button`
+font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
 backface-visibility: hidden;
   background-color: #405cf5;
   border-radius: 6px;
@@ -62,8 +75,34 @@ backface-visibility: hidden;
   text-transform: none;
   transform: translateZ(0);
   transition: all .2s,box-shadow .08s ease-in;
-  width: 150px;
+  width: 160px;
   cursor: pointer;
   position: absolute;
  margin-bottom: 620px;
+`
+export const MiniContainer = styled.div`
+height: 200px;
+width: 330px;
+background-color: #faedda;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+border: 1px solid white;  
+`
+export const TittleListTrip = styled.h2`
+color: #122122;
+margin-top: 5px;
+align-self: center;
+`
+
+export const SecondTittleListTrip = styled.h4`
+color: #272a2a;
+margin-top: 8px;
+margin-left: 4px;
+`
+
+export const Paragraph = styled.p`
+margin-left: 6px;
 `

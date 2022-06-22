@@ -62,6 +62,12 @@ padding-bottom: 80px;
 `
 
 export const Button = styled.button`
+font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
   backface-visibility: hidden;
   background-color: #405cf5;
   border-radius: 6px;
@@ -81,10 +87,16 @@ export const Button = styled.button`
   text-transform: none;
   transform: translateZ(0);
   transition: all .2s,box-shadow .08s ease-in;
-  width: 150px;
+  width: 160px;
   cursor: pointer
 `
 export const ButtonAdmin = styled.button`
+font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
 backface-visibility: hidden;
   background-color: #b3f34a;
   border-radius: 6px;
