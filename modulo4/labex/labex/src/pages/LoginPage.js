@@ -51,7 +51,6 @@ export const LoginPage = () => {
                 <Inputslogin onChange={onChangeEmail} type="email" placeholder="Email:" value={email}></Inputslogin>
                 <Inputslogin onChange={onChangePassword} type="password" placeholder="Senha:" value={password}></Inputslogin>
                 <ButtonEnviar onClick={onSubmitLogin} >Enviar</ButtonEnviar>
-                <ButtonTeste>teste</ButtonTeste>
             </ContainerLogin>
         </MainContainerAdmin>
     )
