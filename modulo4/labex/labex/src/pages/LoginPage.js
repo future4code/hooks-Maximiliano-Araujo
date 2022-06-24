@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React, { useState , useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import { BASE_URL } from "../constants/Constants"
-import { MainContainerAdmin, Teste, TittleLogin } from "../styled-components/LoginPageStyled"
+import { MainContainerAdmin, TittleLogin , ButtonTeste } from "../styled-components/LoginPageStyled"
 import { ContainerLogin, Inputslogin, ButtonEnviar, ContainerImageSide, BackGroundImageLogin, ContainerMirror } from "../styled-components/LoginPageStyled"
 import sunsetProfilePage from "../img/sunsetProfilePage.svg"
 
@@ -10,6 +10,7 @@ import sunsetProfilePage from "../img/sunsetProfilePage.svg"
 export const LoginPage = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    
 
     const onChangeEmail = (event) => {
         setEmail(event.target.value)
@@ -32,7 +33,7 @@ export const LoginPage = () => {
                 localStorage.setItem("token", res.data.token)
                 navigate("/AdminHomePage")
             })
-            .catch((err) => { console.log(err.response.data) })
+            .catch((err) => {alert("Usuário ou senha inválidos.")})
     }
 
 
@@ -50,7 +51,7 @@ export const LoginPage = () => {
                 <Inputslogin onChange={onChangeEmail} type="email" placeholder="Email:" value={email}></Inputslogin>
                 <Inputslogin onChange={onChangePassword} type="password" placeholder="Senha:" value={password}></Inputslogin>
                 <ButtonEnviar onClick={onSubmitLogin} >Enviar</ButtonEnviar>
-                {/* <Teste>Teste</Teste> */}
+                <ButtonTeste>teste</ButtonTeste>
             </ContainerLogin>
         </MainContainerAdmin>
     )

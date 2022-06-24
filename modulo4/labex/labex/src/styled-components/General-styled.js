@@ -41,6 +41,78 @@ height: 600px;
 width: 600px;
 left: 260px;
 top: -80px;
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+&:hover{
+  -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
 `
 export const BackGroundImage = styled.div`
 background-image: url(${props => props.img});
@@ -88,7 +160,12 @@ font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Appl
   transform: translateZ(0);
   transition: all .2s,box-shadow .08s ease-in;
   width: 160px;
-  cursor: pointer
+  cursor: pointer;
+    
+  &:hover{
+  height: 60px;
+  width: 170px;
+  }
 `
 export const ButtonAdmin = styled.button`
 font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
@@ -121,6 +198,10 @@ backface-visibility: hidden;
   position: absolute;
   margin-left: 1100px;
   margin-bottom: 530px;
+  &:hover{
+  height: 60px;
+  width: 170px;
+  }
 `
 
 

@@ -29,6 +29,7 @@ height: 80vh;
 background-repeat: no-repeat;
 margin-left: 80px;
 position: relative;
+
 `
 export const ContainerMirror = styled.div`
 height: 50vh;
@@ -89,7 +90,7 @@ export const ButtonEnviar = styled.button`
   height: 50px;
   box-shadow: 0px 0px 5px rgba(66,66,66,.75);
 `
-export const Teste = styled.button`
+export const ButtonTeste = styled.button`
   align-items: center;
   background-color: #fee6e3;
   border: 2px solid #111;
@@ -111,21 +112,11 @@ export const Teste = styled.button`
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-
-
-
-&:hover:after {
-  transform: translate(0, 0);
-}
-
-&:active {
-  background-color: #ffdeda;
-  outline: 0;
-}
+  box-shadow: 10px 8px  black;
 
 &:hover {
-  outline: 0;
+  box-shadow: 0px 0px;
+  transition: 0.25s;
 }
-
 `
 
