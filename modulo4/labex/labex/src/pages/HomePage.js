@@ -18,8 +18,8 @@ export const HomePage = () => {
         navigate("/ApplicationFormPage")
     }
 
-    const gotToAdminHomePage = () => {
-        navigate("AdminHomePage")
+    const gotToLoginPage = () => {
+        navigate("/LoginPage")
     }
 
     return (
@@ -33,7 +33,7 @@ export const HomePage = () => {
                 </Buttons>
                 <CenterImage src={spaceShip} />
             </ContainerCenter>
-            <ButtonAdmin onClick={gotToAdminHomePage}>Área de Administrador</ButtonAdmin>
+            <ButtonAdmin onClick={gotToLoginPage}>Área de Administrador</ButtonAdmin>
         </Container>
     )
 

@@ -13,8 +13,8 @@ export function RoutesMain() {
         <BrowserRouter>
             <Routes>
                 <Route index element={<HomePage />} />
-                <Route path="ListTripsPage" element={<ListTripsPage />} />
-                <Route path="ApplicationFormPage" element={<ApplicationFormPage />} />
+                <Route path="/ListTripsPage" element={<ListTripsPage />} />
+                <Route path="/ApplicationFormPage" element={<ApplicationFormPage />} />
                 <Route path="/AdminHomePage" element={<AdminHomePage />} />
                 <Route path="/LoginPage" element={<LoginPage />} />
                 <Route path="*" element={<Error/>} />
