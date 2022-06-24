@@ -61,7 +61,7 @@ padding: 7px;
      text-shadow: 0px 0px 0px rgba(66,66,66,.5);
 `
 export const ButtonCreateTrip = styled.button`
-font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+/* font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; */
   font-size: 20px;
   font-weight: 600;
   backface-visibility: hidden;
