@@ -20,7 +20,6 @@ export const TittleCreateTrip = styled.h1`
 color: black;
 font-size: 45px;
 padding-top: 13px;
-text-shadow: 3px 1px   white;
 `
 
 export const InputsCreateTrip = styled.input`
