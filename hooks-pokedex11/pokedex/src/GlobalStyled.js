@@ -1,4 +1,3 @@
-import Router from "./routes/Routes";
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -9,13 +8,5 @@ const GlobalStyle = createGlobalStyle`
   }
   `
 
-const App = () => {
-  return (
-    <>
-      <GlobalStyle />
-      <Router />
-    </>
-  )
-}
-
-export default App;
+  
+  export default GlobalStyle

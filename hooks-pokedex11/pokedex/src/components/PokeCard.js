@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import { Card, ImagePokemon, Tittle } from "./PokeCardStyled"
 import { ButtonsAndName , Buttons} from "./PokeCardStyled"
+import { goToDetailsPage } from "../routes/Coordinator"
 
 
 
 export const PokeCard = (props) => {
+    const navigate = useNavigate()
     const [pokeUrl, setPokeUrl] = useState("")
 
     useEffect(() => {
@@ -30,7 +33,8 @@ export const PokeCard = (props) => {
                 <ButtonsAndName>
                     <Tittle>{props.name}</Tittle>
                     <Buttons>Add Pokédex</Buttons>
-                    <Buttons>Detalhes</Buttons>
+                    <Buttons onClick={() => goToDetailsPage(navigate)}>Detalhes</Buttons>
+                    
                 </ButtonsAndName>
                 <ImagePokemon src={pokeUrl} alt={"pokemon"}/>
             </Card>

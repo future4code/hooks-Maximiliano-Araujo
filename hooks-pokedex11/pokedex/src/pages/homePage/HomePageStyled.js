@@ -13,10 +13,10 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 gap: 20px;
-background-color: #5262bc;
+background-color: #fad309;
 `
 export const Logo = styled.div`
 background-image: url(${props => props.img});
-width: 100px;
-height: 100px;
+width: 500px;
+height: 500px;
 `
