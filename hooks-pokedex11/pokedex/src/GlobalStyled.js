@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 
---fighting:#264653
+--fighting:white
 --flying:#2a9d8f
 --poison:#e9c46a
 --ground:#f4a261
