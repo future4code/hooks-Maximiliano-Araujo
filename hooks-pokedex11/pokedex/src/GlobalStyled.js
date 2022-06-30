@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
 
 --fighting:white
---flying:#2a9d8f
+--flying:black
 --poison:#e9c46a
 --ground:#f4a261
 --rock:#e76f51
