@@ -6,6 +6,7 @@ import { Container, Buttons, ButtonUser, ButtonMessage, ButtonSend } from "./sty
 function App() {
   return (
     <Container>
+
       <Buttons>
         <ButtonUser></ButtonUser>
         <ButtonMessage></ButtonMessage>
@@ -24,6 +25,7 @@ function App(){
       <ButtonUser>User</ButtonUser>      
       <ButtonMessage>Enviar</ButtonMessage>
       <ButtonSend>Send</ButtonSend>
+
     </Container>
   )
 }
