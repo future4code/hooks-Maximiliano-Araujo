@@ -18,7 +18,6 @@ width: 100vw;
 export const ContainerList = styled.div`
 height: 85vh;
 width: 85vw;
-border: 1px black solid;
 display: flex;
 flex-direction: column;
 gap: 20px;
@@ -81,8 +80,9 @@ backface-visibility: hidden;
  margin-bottom: 620px;
 `
 export const MiniContainer = styled.div`
-height: 200px;
-width: 330px;
+box-sizing: border-box;
+height: 190px;
+width: 310px;
 background-color: #faedda;
 border-radius: 5px;
 display: flex;
@@ -90,6 +90,13 @@ flex-direction: column;
 row-gap: 10px;
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 border: 1px solid white;  
+ &:hover{
+  -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+background-color: #ffa119;
+box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px;
+ }
 `
 export const TittleListTrip = styled.h2`
 color: #122122;

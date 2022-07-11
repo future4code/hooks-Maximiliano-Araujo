@@ -29,7 +29,7 @@ export const HomePage = () => {
                 <Tittle>LabeX</Tittle>
                 <Buttons>
                     <Button onClick={goToListTripPages}>Veja nossas viagens</Button>
-                    <Button onClick={goToApplicationFormPage}>Canditade-se!</Button>
+                    <Button onClick={goToApplicationFormPage}>Candidate-se!</Button>
                 </Buttons>
                 <CenterImage src={spaceShip} />
             </ContainerCenter>
