@@ -7,13 +7,13 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get( "/users", (req,res) => {
-    res.send(user)
-})
+// app.get( "/users", (req,res) => {
+//     res.send(user)
+// })
 
-app.get( "/post", (req, res) => {
-    res.send(post)
-})
+// app.get( "/post", (req, res) => {
+//     res.send(post)
+// })
 
 app.get( "/post/:id", (req, res) => {
     const idPost = Number(req.params.id)
