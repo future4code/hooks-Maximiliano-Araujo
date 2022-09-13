@@ -63,19 +63,27 @@ app.post("/createUser", async (req, res) => {
 app.get("/user", async (req, res) => {
   let errorCode = 400
   try {
-    const id = Number(req.query.id)
+    let id = Number(req.query.id)
+
+    let resultId = await connection.raw(
+      `SELECT id , name FROM todoList
+      WHERE id = ${id}`
+    )
+
+    if (resultId[0].length === 0) {
+      throw new Error("Por favor, informe um ID válido.") 
+    }
       
    if (id) {
-      const resultId = await connection.raw(
-        `SELECT id , name FROM todoList
-        WHERE id = ${id}`
-      )
       res.status(200).send(resultId[0])
     }
+
+    
 
   } catch (error) {
     res.status(errorCode).send(error.message)
   }
+
 })
 //======================================================= 03-EditUser
 app.put("/updateUser", async (req, res) => {
