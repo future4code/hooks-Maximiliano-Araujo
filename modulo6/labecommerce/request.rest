@@ -1,0 +1,51 @@
+
+###
+POST http://localhost:3003/users 
+Content-Type: application/json
+
+{
+    "name": "Akira",
+    "email": "akira@email.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3003/users
+
+
+###
+POST http://localhost:3003/products
+
+{
+    "name": "bolo de fubá",
+    "price": 15.00,
+    "image": "https://s2.glbimg.com/GDADinKyW8a4LTtwZyXlG1OiP_E=/0x0:1280x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/w/I/HzhyCkTqm1UoDynv8XDQ/bolo-de-fuba-fofino.jpg"
+}
+
+
+###
+GET http://localhost:3003/products
+
+
+###
+POST http://localhost:3003/purchases
+
+{
+    "user_id": "b660f230-e192-4e53-9921-4518ff352702",
+    "product_id": "3400d515-eefb-484f-8215-f3ff303b7b54",
+    "quantity": 1
+}
+
+###
+GET http://localhost:3003/user/:user_id
+
+###
+GET http://localhost:3003/productsByOrder
+
+
+###
+GET http://localhost:3003/getUsersPurchases
+
+
+
+
