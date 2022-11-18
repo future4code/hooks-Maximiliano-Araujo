@@ -1,0 +1,21 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "email": "morgana@email.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "morgana@email.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3003/user/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6IjI3NDUxNjVmLTAxYjEtNDdiYi1iNThhLTE2Zjg2NWNmNmZkZSJ9LCJpYXQiOjE2Njc1MjY0NzIsImV4cCI6MTY2NzUzMDA3Mn0.RdQ_GD7qSYnyQgEu75Cv5kUr_n-zFFQHmThyGMOUPGM
+Content-Type: application/json

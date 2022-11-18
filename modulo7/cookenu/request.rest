@@ -1,0 +1,43 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "email": "bento@email.com",
+    "name": "Bento",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "max@email.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3003/user/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6IjM4YjE4NmY2LTZjMmMtNDI4Yy05MmE0LTYxMjgyZTNlNWMzMyJ9LCJpYXQiOjE2NjgwMjU3NDMsImV4cCI6MTY2ODA0Mzc0M30.GH5H6G0OHAk0Gp-DHwpoFWk9adXHAccmcUOOeZa9vms
+Content-Type:  application/json
+
+###
+GET http://localhost:3003/user/0ae6abc8-3348-41a2-bba4-bf29d5eb6a77
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6IjM4YjE4NmY2LTZjMmMtNDI4Yy05MmE0LTYxMjgyZTNlNWMzMyJ9LCJpYXQiOjE2NjgxMDY4MTQsImV4cCI6MTY2ODEyNDgxNH0.f6Xr7sbg2QJk-ClURUH3T7qYrzafl7bo-_Kw17eqUtk
+Content-Length: application/json
+
+###
+POST http://localhost:3003/recipe/create
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6IjM4YjE4NmY2LTZjMmMtNDI4Yy05MmE0LTYxMjgyZTNlNWMzMyJ9LCJpYXQiOjE2NjgxOTY0ODAsImV4cCI6MTY2ODIxNDQ4MH0.X4zy4U9SwDzFljG__fgbKSVxk3RDIBUG7aEkuDB6JSM
+Content-Type: application/json
+
+{
+    "title": "sonho",
+    "description": "creme"
+}
+
+###
+GET http://localhost:3003/recipe/33c3a3b0-eb94-41c4-a811-6166f2e35448
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6IjM4YjE4NmY2LTZjMmMtNDI4Yy05MmE0LTYxMjgyZTNlNWMzMyJ9LCJpYXQiOjE2NjgxOTY0ODAsImV4cCI6MTY2ODIxNDQ4MH0.X4zy4U9SwDzFljG__fgbKSVxk3RDIBUG7aEkuDB6JSM
+Content-Type: application/json
